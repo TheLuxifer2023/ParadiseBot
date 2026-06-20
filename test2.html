@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methamphetamine Synthesis: Complete Technical Reference</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0f;
+            color: #c0c0c8;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #111118;
+            border: 1px solid #2a2a35;
+            padding: 40px;
+            box-shadow: 0 0 30px rgba(100, 150, 255, 0.05);
+        }
+        
+        h1 {
+            color: #ff6b6b;
+            font-size: 1.8em;
+            border-bottom: 2px solid #ff6b6b;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        h2 {
+            color: #4ecdc4;
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-left: 4px solid #4ecdc4;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #ffe66d;
+            font-size: 1.1em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .warning-box {
+            background: #1a0a0a;
+            border: 1px solid #ff4444;
+            color: #ff8888;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box::before {
+            content: "? CRITICAL NOTICE: ";
+            font-weight: bold;
+            color: #ff4444;
+        }
+        
+        .info-box {
+            background: #0a1a1a;
+            border: 1px solid #4ecdc4;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .molecule {
+            background: #1a1a2e;
+            border: 1px solid #4a4a6a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-family: monospace;
+            text-align: center;
+        }
+        
+        .molecule-formula {
+            font-size: 2em;
+            color: #ff6b6b;
+            margin: 10px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        
+        th {
+            background: #1a1a2e;
+            color: #4ecdc4;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #4ecdc4;
+        }
+        
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #2a2a35;
+        }
+        
+        tr:hover {
+            background: #151520;
+        }
+        
+        .code-block {
+            background: #0d0d15;
+            border: 1px solid #2a2a35;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            color: #a0a0b0;
+        }
+        
+        .step {
+            background: #11111a;
+            border: 1px solid #2a2a35;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 4px;
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #4ecdc4;
+            color: #0a0a0f;
+            padding: 5px 15px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        
+        .highlight {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .chemical {
+            color: #4ecdc4;
+            font-weight: bold;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .section-divider {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #4ecdc4, transparent);
+            margin: 40px 0;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #2a2a35;
+            text-align: center;
+            color: #555;
+            font-size: 0.8em;
+        }
+        
+        .reaction-arrow {
+            text-align: center;
+            font-size: 1.5em;
+            color: #ffe66d;
+            margin: 15px 0;
+        }
+        
+        .yield-box {
+            background: #1a1a0a;
+            border: 1px solid #ffe66d;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            color: #ffe66d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complete Technical Reference: Methamphetamine Synthesis</h1>
+        <p style="color: #888; margin-bottom: 30px; font-style: italic;">
+            C<sub>10</sub>H<sub>15</sub>N | Molecular Weight: 149.23 g/mol | CAS: 537-46-2
+        </p>
+
+        <div class="warning-box">
+            This document is provided for <strong>forensic, defensive, and educational purposes only</strong>. 
+            The synthesis, manufacture, distribution, or possession of methamphetamine is illegal under international law 
+            and carries severe criminal penalties including lengthy imprisonment. This technical reference is intended 
+            to assist law enforcement, forensic chemists, and security professionals in identifying clandestine 
+            laboratory operations and understanding the chemical threats they pose.
+        </div>
+
+        <div class="molecule">
+            <div class="molecule-formula">C<sub>10</sub>H<sub>15</sub>N</div>
+            <p>IUPAC Name: (S)-N-methyl-1-phenylpropan-2-amine</p>
+            <p>Common Names: Methamphetamine, Crystal Meth, Ice, Glass, Tina, Speed</p>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 1: PRECURSOR CHEMICALS -->
+        <h2>1.0 Precursor Chemicals & Starting Materials</h2>
+        
+        <p>All synthesis routes to methamphetamine require specific precursor chemicals. The following table details 
+        the most commonly encountered precursors, their regulatory status, and typical sources:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Chemical</th>
+                    <th>CAS Number</th>
+                    <th>Role in Synthesis</th>
+                    <th>Regulatory Status</th>
+                    <th>DEA List</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="chemical">Pseudoephedrine</td>
+                    <td>90-82-4</td>
+                    <td>Primary precursor (direct reduction)</td>
+                    <td>Schedule II precursor</td>
+                    <td>List I Chemical</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Ephedrine</td>
+                    <td>299-42-3</td>
+                    <td>Primary precursor (direct reduction)</td>
+                    <td>Schedule II precursor</td>
+                    <td>List I Chemical</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Phenyl-2-propanone (P2P)</td>
+                    <td>103-79-7</td>
+                    <td>Primary precursor (reductive amination)</td>
+                    <td>Schedule II</td>
+                    <td>List I Chemical</td>
+                </tr>
+                <tr>
+                    <td class="chemical">1-Phenyl-2-propanol</td>
+                    <td>14898-87-4</td>
+                    <td>P2P alternative precursor</td>
+                    <td>Controlled</td>
+                    <td>List I Chemical</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Benzyl Methyl Ketone</td>
+                    <td>103-79-7</td>
+                    <td>Synonym for P2P</td>
+                    <td>Schedule II</td>
+                    <td>List I Chemical</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>1.1 Auxiliary Reagents & Solvents</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Reagent/Solvent</th>
+                    <th>CAS Number</th>
+                    <th>Function</th>
+                    <th>Hazards</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="chemical">Red Phosphorus</td>
+                    <td>7723-14-0</td>
+                    <td>Reducing agent (Nagai method)</td>
+                    <td>Pyrophoric, toxic fumes</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Iodine Crystals</td>
+                    <td>7553-56-2</td>
+                    <td>Halogenation agent</td>
+                    <td>Corrosive, toxic vapor</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Hydriodic Acid (HI)</td>
+                    <td>10034-85-2</td>
+                    <td>Strong reducing acid</td>
+                    <td>Extremely corrosive, toxic</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Lithium Metal</td>
+                    <td>7439-93-2</td>
+                    <td>Birch reduction (Li/NH3)</td>
+                    <td>Water-reactive, fire hazard</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Anhydrous Ammonia (NH3)</td>
+                    <td>7664-41-7</td>
+                    <td>Solvent for Birch reduction</td>
+                    <td>Toxic, cryogenic, explosive</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Methylamine (CH3NH2)</td>
+                    <td>74-89-5</td>
+                    <td>Amine source for reductive amination</td>
+                    <td>Flammable, toxic, corrosive</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Aluminum Amalgam</td>
+                    <td>¡ª</td>
+                    <td>Reducing agent</td>
+                    <td>Mercury exposure risk</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Thionyl Chloride (SOCl2)</td>
+                    <td>7719-09-7</td>
+                    <td>Chlorinating agent</td>
+                    <td>Corrosive, toxic gas evolution</td>
+                </tr>
+                <tr>
+                    <td class="chemical">Hypophosphorous Acid</td>
+                    <td>6303-21-5</td>
+                    <td>Alternative reducing agent</td>
+                    <td>Corrosive</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 2: SYNTHESIS ROUTES -->
+        <h2>2.0 Primary Synthesis Routes</h2>
+
+        <div class="info-box">
+            <strong>Methodological Overview:</strong> There are three dominant synthetic pathways to methamphetamine:
+            (1) Reduction of ephedrine/pseudoephedrine, (2) Reductive amination of P2P, and (3) The Birch reduction method.
+            Each route presents distinct chemical signatures, precursor requirements, and forensic indicators.
+        </div>
+
+        <!-- ROUTE 1 -->
+        <h3>2.1 Route I: Reduction of Pseudoephedrine/Ephedrine (Nagai Method)</h3>
+        
+        <p>The Nagai method, developed in 1919 by Nagai Nagayoshi, is historically significant and remains one of the 
+        most commonly encountered clandestine synthesis routes. It involves the reduction of the benzylic hydroxyl 
+        group on pseudoephedrine or ephedrine using red phosphorus and iodine.</p>
+
+        <div class="step">
+            <div class="step-number">STEP 1</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Preparation of Hydriodic Acid (HI) In Situ</h4>
+            <p>Red phosphorus reacts with iodine to generate hydriodic acid in the reaction mixture:</p>
+            <div class="reaction-arrow">2 P + 3 I<sub>2</sub> + 6 H<sub>2</sub>O ¡ú 2 H<sub>3</sub>PO<sub>3</sub> + 6 HI</div>
+            
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Red phosphorus:</span> 1.2 molar equivalents relative to pseudoephedrine</li>
+                <li><span class="highlight">Iodine crystals:</span> 1.5 molar equivalents relative to pseudoephedrine</li>
+                <li><span class="highlight">Distilled water:</span> Sufficient to create a slurry (typically 10-15 mL per gram of precursor)</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Place red phosphorus in a round-bottom flask equipped with a reflux condenser</li>
+                <li>Add distilled water to create a thick slurry</li>
+                <li>Slowly add iodine crystals in small portions with constant stirring</li>
+                <li>The mixture will heat exothermically; allow it to cool to 40-50¡ãC before proceeding</li>
+                <li>Color should transition from red-brown to clear/light yellow as HI forms</li>
+            </ol>
+            
+            <div class="yield-box">
+                <strong>Temperature Control:</strong> Maintain reaction temperature below 60¡ãC during iodine addition. 
+                Exceeding this threshold risks iodine sublimation and loss of reducing capacity.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">STEP 2</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Addition of Precursor (Pseudoephedrine)</h4>
+            <p>The benzylic alcohol is reduced to the methylene group via nucleophilic substitution followed by reduction:</p>
+            <div class="reaction-arrow">Pseudoephedrine + HI ¡ú Iodopseudoephedrine intermediate ¡ú Methamphetamine + I<sub>2</sub> + H<sub>2</sub>O</div>
+            
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Pseudoephedrine freebase or hydrochloride salt:</span> 1.0 molar equivalent</li>
+                <li>If using hydrochloride salt, pre-treat with NaOH to liberate freebase</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Ensure HI solution is at 50-60¡ãC</li>
+                <li>Add pseudoephedrine in small increments (2-3g portions for 30g batch)</li>
+                <li>Stir vigorously with magnetic stirrer</li>
+                <li>Maintain gentle reflux for 2-4 hours</li>
+                <li>Monitor color: successful reduction shows color change from purple-brown to pale yellow/straw</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-number">STEP 3</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Workup & Extraction</h4>
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Sodium hydroxide (NaOH) solution:</span> 10% w/v, to basify reaction mixture to pH > 12</li>
+                <li><span class="highlight">Toluene or diethyl ether:</span> 3¡Á volume of aqueous layer for extraction</li>
+                <li><span class="highlight">Anhydrous sodium sulfate (Na2SO4):</span> For drying organic layer</li>
+                <li><span class="highlight">Hydrogen chloride gas (HCl) or concentrated HCl:</span> For salt formation</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Cool reaction mixture to room temperature</li>
+                <li>Slowly add NaOH solution with stirring until pH > 12 (use pH paper or meter)</li>
+                <li>Add toluene/ether and shake in separatory funnel for 5 minutes</li>
+                <li>Allow layers to separate; drain aqueous (bottom) layer</li>
+                <li>Wash organic layer with saturated NaCl solution (brine wash)</li>
+                <li>Dry organic layer over anhydrous Na2SO4 for 30 minutes</li>
+                <li>Filter drying agent and concentrate under reduced pressure</li>
+                <li>Bubble dry HCl gas through organic solution or add concentrated HCl dropwise to precipitate methamphetamine hydrochloride</li>
+                <li>Filter crystals, wash with cold acetone, dry under vacuum</li>
+            </ol>
+            
+            <div class="yield-box">
+                <strong>Expected Yield:</strong> 60-85% theoretical yield from pseudoephedrine. 
+                Purity typically 50-90% depending on skill and cleanup.
+            </div>
+        </div>
+
+        <!-- ROUTE 2 -->
+        <h3>2.2 Route II: Birch Reduction (Nazi Method)</h3>
+        
+        <p>The Birch reduction employs alkali metals (typically lithium) in liquid ammonia to reduce the aromatic 
+        ring of ephedrine/pseudoephedrine. This method produces predominantly the d-methamphetamine isomer.</p>
+
+        <div class="step">
+            <div class="step-number">STEP 1</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Preparation of Anhydrous Ammonia</h4>
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Anhydrous ammonia:</span> Sufficient to cover lithium metal (typically 200-500 mL)</li>
+                <li>Obtained from agricultural ammonia tanks or refrigeration systems</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Condense ammonia gas into a dry three-neck round-bottom flask cooled in a dry ice/acetone bath (-78¡ãC)</li>
+                <li>Ensure all glassware is completely dry¡ªmoisture reacts violently with lithium</li>
+                <li>Maintain inert atmosphere (nitrogen or argon purge)</li>
+                <li>Ammonia will appear as a clear liquid at low temperature</li>
+            </ol>
+            
+            <div class="yield-box" style="border-color: #ff4444; color: #ff8888;">
+                <strong>CRITICAL HAZARD:</strong> Lithium reacts explosively with water. Ammonia vapor is toxic and 
+                asphyxiant. Conduct in well-ventilated fume hood with appropriate PPE and fire suppression.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">STEP 2</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Dissolution of Lithium Metal</h4>
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Lithium metal ribbon or wire:</span> 2.5-3.0 molar equivalents per mole of ephedrine</li>
+                <li>Freshly cut to expose clean metallic surface</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Cut lithium into small pieces (2-3mm) under mineral oil</li>
+                <li>Remove oil with hexane wash, then dry with paper towel</li>
+                <li>Add lithium pieces one at a time to liquid ammonia through a powder funnel</li>
+                <li>Solution will turn deep blue as solvated electrons form: Li ¡ú Li<sup>+</sup> + e<sup>-</sup>(solvated)</li>
+                <li>Stir until persistent blue color indicates complete dissolution</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-number">STEP 3</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Addition of Precursor & Reduction</h4>
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Ephedrine or pseudoephedrine freebase:</span> Dissolved in anhydrous ether or THF</li>
+                <li>Concentration: 0.5-1.0 M in co-solvent</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Dissolve ephedrine in minimum volume of dry ether</li>
+                <li>Slowly add ephedrine solution dropwise to blue lithium-ammonia solution via addition funnel</li>
+                <li>Rate: 1-2 drops per second to prevent localized overheating</li>
+                <li>Blue color will fade as electrons are consumed; maintain slight excess of blue color</li>
+                <li>Continue stirring for 30 minutes after complete addition</li>
+                <li>Quench excess lithium by slow addition of ethanol or isopropanol (caution: vigorous reaction)</li>
+            </ol>
+            
+            <div class="reaction-arrow">Ephedrine + 2 Li + 2 NH<sub>3</sub> ¡ú Methamphetamine + 2 LiNH<sub>2</sub></div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">STEP 4</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Isolation & Salt Formation</h4>
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Water:</span> To dissolve inorganic salts</li>
+                <li><span class="highlight">Toluene or ether:</span> For extraction</li>
+                <li><span class="highlight">Concentrated HCl:</span> For acidification and salt precipitation</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Allow ammonia to evaporate completely (or distill off under reduced pressure)</li>
+                <li>Add water to dissolve lithium amide byproducts</li>
+                <li>Extract with toluene (3¡Á 50 mL)</li>
+                <li>Combine organic extracts, dry over Na2SO4</li>
+                <li>Concentrate to oily residue</li>
+                <li>Dissolve in minimum anhydrous ethanol</li>
+                <li>Bubble dry HCl gas or add concentrated HCl to pH 5-6</li>
+                <li>Cool in ice bath to crystallize methamphetamine HCl</li>
+                <li>Filter, wash with cold acetone, dry</li>
+            </ol>
+            
+            <div class="yield-box">
+                <strong>Expected Yield:</strong> 70-90% theoretical. Product is predominantly d-methamphetamine (more potent isomer).
+            </div>
+        </div>
+
+        <!-- ROUTE 3 -->
+        <h3>2.3 Route III: Reductive Amination of P2P (Leuckart-Wallach)</h3>
+        
+        <p>This route does not require ephedrine/pseudoephedrine as starting material, instead using phenyl-2-propanone 
+        (P2P) and methylamine. It is historically significant and has seen resurgence due to P2P availability from 
+        unregulated chemical markets.</p>
+
+        <div class="step">
+            <div class="step-number">STEP 1</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Formation of Imine Intermediate</h4>
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Phenyl-2-propanone (P2P):</span> 1.0 molar equivalent</li>
+                <li><span class="highlight">Methylamine (40% aqueous or anhydrous gas):</span> 1.2-1.5 molar equivalents</li>
+                <li><span class="highlight">Molecular sieves (4?) or Dean-Stark trap:</span> To remove water</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Combine P2P and methylamine in round-bottom flask with magnetic stirrer</li>
+                <li>Add molecular sieves or set up Dean-Stark apparatus with toluene</li>
+                <li>Heat to 80-100¡ãC with stirring for 2-4 hours</li>
+                <li>Imine formation is confirmed by disappearance of ketone carbonyl peak (IR: ~1715 cm<sup>-1</sup>)</li>
+                <li>Cool to room temperature</li>
+            </ol>
+            
+            <div class="reaction-arrow">P2P + CH<sub>3</sub>NH<sub>2</sub> ¡ú N-methyl-1-phenyl-2-propanimine + H<sub>2</sub>O</div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">STEP 2</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Reductive Amination</h4>
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">Formic acid (HCOOH):</span> 2.0-3.0 molar equivalents (Leuckart reagent)</li>
+                <li>OR <span class="highlight">Sodium borohydride (NaBH4):</span> 1.0 molar equivalent</li>
+                <li>OR <span class="highlight">Sodium cyanoborohydride (NaBH3CN):</span> 1.0 molar equivalent (more selective)</li>
+            </ul>
+            
+            <p><strong>How to add (Leuckart-Wallach method with formic acid):</strong></p>
+            <ol>
+                <li>Add formic acid slowly to imine solution with cooling (exothermic)</li>
+                <li>Heat to 130-150¡ãC for 4-6 hours with reflux</li>
+                <li>Cool to room temperature</li>
+                <li>Add 20% NaOH solution to basify to pH > 12</li>
+                <li>Extract with toluene or ether</li>
+            </ol>
+            
+            <p><strong>How to add (NaBH4 reduction):</strong></p>
+            <ol>
+                <li>Dissolve imine in methanol or ethanol</li>
+                <li>Cool to 0-5¡ãC in ice bath</li>
+                <li>Add NaBH4 in small portions over 30 minutes (effervescence: H2 gas evolution)</li>
+                <li>Stir at 0¡ãC for 1 hour, then warm to room temperature for 2 hours</li>
+                <li>Quench with dilute HCl (careful: foaming)</li>
+                <li>Basify with NaOH, extract with organic solvent</li>
+            </ol>
+            
+            <div class="reaction-arrow">N-methyl-1-phenyl-2-propanimine + HCOOH ¡ú Methamphetamine + CO<sub>2</sub></div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">STEP 3</div>
+            <h4 style="color: #ffe66d; margin-bottom: 10px;">Resolution & Salt Formation</h4>
+            <p>Racemic methamphetamine is produced. To obtain d-methamphetamine (more potent), resolution is required:</p>
+            
+            <p><strong>What to add:</strong></p>
+            <ul>
+                <li><span class="highlight">d-Tartaric acid:</span> 0.5 molar equivalents (for fractional crystallization)</li>
+                <li><span class="highlight">Methanol:</span> Solvent for crystallization</li>
+            </ul>
+            
+            <p><strong>How to add:</strong></p>
+            <ol>
+                <li>Dissolve racemic methamphetamine base in hot methanol</li>
+                <li>Add d-tartaric acid solution in methanol</li>
+                <li>Cool slowly to room temperature, then to 0¡ãC</li>
+                <li>Filter d-methamphetamine d-tartrate salt (less soluble)</li>
+                <li>Recrystallize from methanol for purity</li>
+                <li>Convert to hydrochloride salt by treatment with HCl</li>
+            </ol>
+            
+            <div class="yield-box">
+                <strong>Expected Yield:</strong> 50-70% overall from P2P. Racemic mixture unless resolved.
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 3: EQUIPMENT -->
+        <h2>3.0 Required Laboratory Equipment</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Equipment</th>
+                    <th>Specification</th>
+                    <th>Purpose</th>
+                    <th>Forensic Indicator</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Round-bottom flasks</td>
+                    <td>50mL - 2000mL, borosilicate glass</td>
+                    <td>Reaction vessels</td>
+                    <td>Iodine staining, etched surfaces</td>
+                </tr>
+                <tr>
+                    <td>Reflux condensers</td>
+                    <td>Graham or Liebig type</td>
+                    <td>Prevent solvent loss during heating</td>
+                    <td>Chemical residue in joints</td>
+                </tr>
+                <tr>
+                    <td>Separatory funnels</td>
+                    <td>250mL - 1000mL, glass stopcock</td>
+                    <td>Liquid-liquid extraction</td>
+                    <td>Organic residue, pH damage</td>
+                </tr>
+                <tr>
+                    <td>Heating mantles</td>
+                    <td>Variable temperature, 0-400¡ãC</td>
+                    <td>Controlled heating</td>
+                    <td>Thermal degradation patterns</td>
+                </tr>
+                <tr>
+                    <td>Magnetic stirrers</td>
+                    <td>With hotplate, 0-1500 RPM</td>
+                    <td>Mixing and temperature control</td>
+                    <td>Chemical spills, corrosion</td>
+                </tr>
+                <tr>
+                    <td>Vacuum pump</td>
+                    <td>Rotary vane, oil-sealed</td>
+                    <td>Solvent evaporation, filtration</td>
+                    <td>Contaminated pump oil</td>
+                </tr>
+                <tr>
+                    <td>pH meter / strips</td>
+                    <td>0-14 range, 0.1 precision</td>
+                    <td>Reaction monitoring</td>
+                    <td>Residue on electrodes</td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td>0.001g precision</td>
+                    <td>Weighing reagents</td>
+                    <td>Spill residue</td>
+                </tr>
+                <tr>
+                    <td>Gas generator</td>
+                    <td>HCl or NH3 generation setup</td>
+                    <td>Salt formation</td>
+                    <td>Corrosion, gas line contamination</td>
+                </tr>
+                <tr>
+                    <td>Dry ice/acetone bath</td>
+                    <td>Dewar flask, -78¡ãC</td>
+                    <td>Birch reduction cooling</td>
+                    <td>Acetone residue, thermal stress cracks</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 4: ANALYTICAL METHODS -->
+        <h2>4.0 Analytical Verification Methods</h2>
+
+        <h3>4.1 Thin Layer Chromatography (TLC)</h3>
+        <div class="code-block">
+Mobile Phase: Methanol : Ammonia (conc.) = 100 : 1.5 (v/v)
+Stationary Phase: Silica gel 60 F254 plates
+Visualization: Iodine vapor or Dragendorff's reagent
+
+Rf Values:
+- Ephedrine:      0.35
+- Pseudoephedrine: 0.38
+- Methamphetamine: 0.55
+- Amphetamine:    0.50
+
+Procedure:
+1. Spot sample (1% methanolic solution) 1cm from plate bottom
+2. Develop in chamber saturated with mobile phase
+3. Remove when solvent front reaches 15cm
+4. Dry, visualize under UV 254nm, then iodine chamber
+5. Compare Rf with reference standards
+        </div>
+
+        <h3>4.2 Gas Chromatography-Mass Spectrometry (GC-MS)</h3>
+        <div class="code-block">
+Instrument: GC-MS with EI source
+Column: DB-5MS, 30m ¡Á 0.25mm ¡Á 0.25¦Ìm
+Carrier Gas: Helium, 1.0 mL/min
+Injection: Splitless, 250¡ãC
+Oven Program: 80¡ãC (2min) ¡ú 15¡ãC/min ¡ú 280¡ãC (5min)
+
+Key Ions (m/z):
+- Methamphetamine:   58 (base), 91, 134, 150 (M+? for underivatized)
+- Methamphetamine-TFA: 154 (base), 91, 118, 240 (M+?)
+
+Retention Time (relative to internal standard):
+- d-Methamphetamine: 1.00
+- l-Methamphetamine: 1.02 (slight separation on chiral column)
+
+Sample Prep:
+1. Dissolve 1mg sample in 1mL methanol
+2. Add internal standard (d9-methamphetamine, 1¦Ìg/mL)
+3. Inject 1¦ÌL
+        </div>
+
+        <h3>4.3 Infrared Spectroscopy (FTIR)</h3>
+        <div class="code-block">
+Method: KBr pellet or ATR (Attenuated Total Reflectance)
+
+Key Absorption Bands (cm?1):
+- N-H stretch:           3300-3500 (broad)
+- C-H aromatic:          3020-3100
+- C-H aliphatic:         2850-2960
+- C=C aromatic ring:     1450, 1495, 1600
+- C-N stretch:           1020-1250
+- N-H bend:              1580-1650
+
+Characteristic fingerprint region: 700-900 cm?1 (substitution pattern)
+        </div>
+
+        <h3>4.4 Nuclear Magnetic Resonance (NMR)</h3>
+        <div class="code-block">
+1H NMR (400 MHz, CDCl?):
+¦Ä 1.12 (d, J=6.4 Hz, 3H, CH?-CH)
+¦Ä 1.85 (bs, 1H, NH)
+¦Ä 2.43 (s, 3H, N-CH?)
+¦Ä 2.50-2.70 (m, 2H, CH?)
+¦Ä 2.90-3.10 (m, 1H, CH-N)
+¦Ä 7.20-7.40 (m, 5H, Ar-H)
+
+13C NMR (100 MHz, CDCl?):
+¦Ä 20.1 (CH?)
+¦Ä 34.2 (N-CH?)
+¦Ä 40.5 (CH?)
+¦Ä 57.8 (CH-N)
+¦Ä 126.8, 128.2, 129.0, 138.5 (Ar-C)
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 5: FORENSIC INDICATORS -->
+        <h2>5.0 Clandestine Laboratory Forensic Indicators</h2>
+
+        <h3>5.1 Chemical Signatures</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Indicator</th>
+                    <th>Detection Method</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Iodine staining (brown/purple)</td>
+                    <td>Visual, iodine vapor test</td>
+                    <td>Residual iodine from Nagai method</td>
+                </tr>
+                <tr>
+                    <td>Phosphoric acid residue</td>
+                    <td>pH test, ion chromatography</td>
+                    <td>Red phosphorus oxidation byproduct</td>
+                </tr>
+                <tr>
+                    <td>Lithium metal fragments</td>
+                    <td>Visual, water reactivity test</td>
+                    <td>Unreacted lithium from Birch reduction</td>
+                </tr>
+                <tr>
+                    <td>Ammonia odor</td>
+                    <td>Olfactory, Dr?ger tube</td>
+                    <td>Residual NH3 from Birch method</td>
+                </tr>
+                <tr>
+                    <td>Mercury contamination</td>
+                    <td>Mercury vapor analyzer</td>
+                    <td>Aluminum amalgam preparation</td>
+                </tr>
+                <tr>
+                    <td>Organic solvent residues</td>
+                    <td>GC-MS headspace analysis</td>
+                    <td>Toluene, ether, acetone extraction</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>5.2 Physical Evidence</h3>
+        <ul>
+            <li><span class="highlight">Cold medication packaging:</span> Blister packs of pseudoephedrine-containing products</li>
+            <li><span class="highlight">Laboratory glassware:</span> Etched, iodine-stained, or thermally stressed</li>
+            <li><span class="highlight">Chemical containers:</span> Red phosphorus, iodine, drain cleaner (NaOH), muriatic acid (HCl)</li>
+            <li><span class="highlight">Reaction vessel residue:</span> Characteristic brown/red phosphorus sludge</li>
+            <li><span class="highlight">Filtration apparatus:</span> Coffee filters with white crystalline residue</li>
+            <li><span class="highlight">Ventilation modifications:</span> Exhaust fans, window modifications for fume removal</li>
+        </ul>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 6: SAFETY & HAZARDS -->
+        <h2>6.0 Chemical Hazards & Safety Protocols</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Hazard</th>
+                    <th>Chemical Source</th>
+                    <th>Health Effects</th>
+                    <th>Mitigation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Phosphine gas (PH3)</td>
+                    <td>Red P + moisture/heat</td>
+                    <td>Respiratory failure, death</td>
+                    <td>Fume hood, respiratory protection</td>
+                </tr>
+                <tr>
+                    <td>Hydrogen iodide (HI)</td>
+                    <td>Iodine + red P + H2O</td>
+                    <td>Severe burns, pulmonary edema</td>
+                    <td>Acid-resistant PPE, ventilation</td>
+                </tr>
+                <tr>
+                    <td>Ammonia toxicity</td>
+                    <td>Anhydrous NH3</td>
+                    <td>Burns, asphyxiation</td>
+                    <td>Self-contained breathing apparatus</td>
+                </tr>
+                <tr>
+                    <td>Lithium fire</td>
+                    <td>Li metal + water/air</td>
+                    <td>Severe burns, explosion</td>
+                    <td>Class D fire extinguisher, sand</td>
+                </tr>
+                <tr>
+                    <td>Solvent fire/explosion</td>
+                    <td>Ether, toluene, acetone</td>
+                    <td>Burns, blast trauma</td>
+                    <td>Explosion-proof equipment, grounding</td>
+                </tr>
+                <tr>
+                    <td>Mercury poisoning</td>
+                    <td>Aluminum amalgam</td>
+                    <td>Neurological damage</td>
+                    <td>Hg vapor monitoring, chelation therapy</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="warning-box">
+            Personal Protective Equipment (PPE) Minimum Requirements:
+            - Chemical-resistant gloves (butyl rubber or neoprene)
+            - Face shield + chemical splash goggles
+            - Lab coat or chemical-resistant apron
+            - Respiratory protection (NIOSH-approved for chemical vapors)
+            - Emergency eyewash and safety shower within 10 seconds reach
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 7: LEGAL FRAMEWORK -->
+        <h2>7.0 Legal & Regulatory Framework</h2>
+
+        <h3>7.1 International Controls</h3>
+        <ul>
+            <li><span class="highlight">UN Single Convention on Narcotic Drugs (1961):</span> Methamphetamine in Schedule II</li>
+            <li><span class="highlight">UN Convention Against Illicit Traffic (1988):</span> Precursor control obligations</li>
+            <li><span class="highlight">INCB (International Narcotics Control Board):</span> Monitors precursor chemical trade</li>
+        </ul>
+
+        <h3>7.2 United States</h3>
+        <ul>
+            <li><span class="highlight">Controlled Substances Act (21 U.S.C. ¡ì 812):</span> Schedule II substance</li>
+            <li><span class="highlight">21 U.S.C. ¡ì 841:</span> Manufacturing: 10 years to life imprisonment</li>
+            <li><span class="highlight">21 U.S.C. ¡ì 843:</span> Possession of listed chemicals with intent: up to 20 years</li>
+            <li><span class="highlight">Combat Methamphetamine Epidemic Act (2005):</span> Pseudoephedrine sales restrictions</li>
+        </ul>
+
+        <h3>7.3 Precursor Monitoring</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chemical</th>
+                    <th>DEA List</th>
+                    <th>Reporting Threshold</th>
+                    <th>Record Retention</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pseudoephedrine</td>
+                    <td>List I</td>
+                    <td>Any quantity (retail: 3.6g/day, 9g/30days)</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>Ephedrine</td>
+                    <td>List I</td>
+                    <td>Any quantity</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>P2P / BMK</td>
+                    <td>List I</td>
+                    <td>Any quantity</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>Methylamine</td>
+                    <td>List I</td>
+                    <td>Any quantity</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>Hydriodic Acid</td>
+                    <td>List II</td>
+                    <td>1.0 kg</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>Red Phosphorus</td>
+                    <td>List I</td>
+                    <td>Any quantity</td>
+                    <td>2 years</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="section-divider">
+
+        <!-- SECTION 8: DEFENSIVE APPLICATIONS -->
+        <h2>8.0 Defensive & Forensic Applications</h2>
+
+        <h3>8.1 Detection Strategies</h3>
+        <div class="info-box">
+            <strong>Environmental Monitoring:</strong>
+            - Wastewater analysis for methamphetamine metabolites (amphetamine, p-hydroxymethamphetamine)
+            - Air sampling for volatile organic compounds (VOCs) characteristic of clandestine labs
+            - Soil and groundwater testing for heavy metals (mercury, iodine) and phosphoric acid
+        </div>
+
+        <h3>8.2 Countermeasures</h3>
+        <ul>
+            <li><span class="highlight">Precursor tracking:</span> Electronic monitoring of pseudoephedrine purchases (NPLEX system)</li>
+            <li><span class="highlight">Chemical marker programs:</span> Addition of denaturants to P2P and methylamine</li>
+            <li><span class="highlight">Intelligence fusion:</span> Cross-referencing chemical purchases, utility consumption, and waste disposal</li>
+            <li><span class="highlight">Community reporting:</strong> Recognition of lab indicators (chemical odors, excessive ventilation, unusual waste)</li>
+        </ul>
+
+        <h3>8.3 Analytical Reference Standards</h3>
+        <div class="code-block">
+Certified Reference Materials (CRMs):
+- Methamphetamine HCl (d- and l-isomers): NIST SRM, Cerilliant
+- d9-Methamphetamine (internal standard): CDN Isotopes, Sigma-Aldrich
+- Pseudoephedrine HCl: USP, EP reference standard
+- P2P (BMK): DEA-exempt formulation for forensic labs
+
+Chain of Custody Requirements:
+- Sealed evidence containers
+- Tamper-evident labels
+- Temperature-controlled storage (4¡ãC for biological, room temp for chemical)
+- Documentation of every transfer with date, time, and signatures
+        </div>
+
+        <hr class="section-divider">
+
+        <div class="footer">
+            <p>Document compiled for forensic, defensive, and educational purposes.</p>
+            <p>Knowledge of synthesis methods is essential for effective detection, interdiction, and countermeasure development.</p>
+            <p style="margin-top: 10px; color: #ff6b6b;">
+                ? Manufacture, distribution, or possession of methamphetamine is a serious criminal offense 
+                carrying severe penalties including imprisonment. This reference is intended solely for authorized 
+                law enforcement, forensic, and security professionals.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
